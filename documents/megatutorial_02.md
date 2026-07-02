@@ -1,14 +1,22 @@
 # Industrial Computer Vision
 
-In einer automatisierten Fertigungshalle eine automatische Förderanlage. Diese Transportiert Kisten von einer Fertigungsstation zur nächsten. Da es in diesem Bereich der Anlage immer wieder zu Fehlern kommt, soll eine videogestützte Überwachung installiert werden, die Fehler automatisch erkennt.
+In modernen, automatisierten Fertigungshallen sind reibungslose Materialflüsse das Rückgrat der Produktion. Im Zentrum dieses Szenarios steht eine automatische Förderanlage, die Werkstücke und Kisten kontinuierlich von einer Fertigungsstation zur nächsten transportiert.
+
+Trotz präziser Mechanik kommt es in einem spezifischen Teilbereich dieser Anlage immer wieder zu unvorhergesehenen Störungen und Prozessunterbrechungen. Um die Anlagenverfügbarkeit zu maximieren und Stillstandszeiten zu minimieren, soll eine videogestützte Echtzeit-Überwachung implementiert werden. Ziel ist es, optische Anomalien und Fehlerzustände mithilfe von Computer-Vision-Algorithmen vollautomatisch zu erkennen und zu melden.
 
 ## Systemlogik
 
-In der Maschine kommt es regelmäßig zu Blockierungen durch fehlerhaft platzierte Objekte am Förderband. Diese Situation sollen als Fehlerhaft erkannt werden. Außerdem soll erkannt werden, wenn das Förderband überhaupt keine Kisten transportiert, weil das ein Indiz für eine Fehlerhafte Situation im vorderen Teil der Maschine sein kann.
+Das zu entwickelnde KI-System muss im Kern drei Betriebszustände der Förderanlage zuverlässig voneinander unterscheiden können:
+
+* **Blockierungen (Fehlerzustand):** Regelmäßig führen fehlerhaft platzierte oder verkantete Objekte auf dem Förderband zu Staus. Diese Situationen müssen sofort als kritischer Fehler identifiziert werden, um Folgeschäden an der Anlage zu verhindern.
+* **Leerlauf (Anomalie-Indikator):** Transportiert das Förderband über einen definierten Zeitraum hinweg überhaupt keine Kisten, ist dies ein starkes Indiz für eine Störung oder Materialknappheit in den vorgelagerten Prozessschritten der Maschine.
+* **Normalbetrieb (Sollzustand):** Der fehlerfreie, kontinuierliche Transport von Kisten.
 
 ## Daten
 
-Ich habe uns im `data`-Ordner bereits einen Bilddatensatz zusammengestellt. Wir benutzten dazu Bilder aus einer Fertigungsstraße. Diese Bilder zeigen unterschiedliche Situationen, in denen sich das Förderband befinden kann. Wir wollen diese Situationen mit Hilfe von Computer Vision erkennen und automatisch klassifizieren.
+Im Verzeichnis data steht bereits ein dedizierter Bilddatensatz aus einer realen Fertigungsstraße zur Verfügung. Die Aufnahmen spiegeln die verschiedenen visuellen Szenarien und Umgebungsbedingungen (z. B. wechselnde Lichtverhältnisse, unterschiedliche Objektpositionen) wider, in denen sich das Förderband befinden kann.
+
+Unsere Aufgabe ist es, diese Bilddaten zu nutzen, um ein Deep-Learning-Modell zu trainieren, das in der Lage ist, die visuellen Merkmale der einzelnen Zustände zu extrahieren und die Situationen präzise zu klassifizieren.
 
 ## Aufgabenstellung
 
