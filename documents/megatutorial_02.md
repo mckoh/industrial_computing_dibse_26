@@ -9,8 +9,16 @@ Trotz präziser Mechanik kommt es in einem spezifischen Teilbereich dieser Anlag
 Das zu entwickelnde KI-System muss im Kern drei Betriebszustände der Förderanlage zuverlässig voneinander unterscheiden können:
 
 * **Blockierungen (Fehlerzustand):** Regelmäßig führen fehlerhaft platzierte oder verkantete Objekte auf dem Förderband zu Staus. Diese Situationen müssen sofort als kritischer Fehler identifiziert werden, um Folgeschäden an der Anlage zu verhindern.
+
+![Beispielbild Blockierungen](../data/jammed/image_02.jpeg)
+
 * **Leerlauf (Anomalie-Indikator):** Transportiert das Förderband über einen definierten Zeitraum hinweg überhaupt keine Kisten, ist dies ein starkes Indiz für eine Störung oder Materialknappheit in den vorgelagerten Prozessschritten der Maschine.
+
+![Beispielbild Leerlauf](../data/empty/image_06.jpeg)
+
 * **Normalbetrieb (Sollzustand):** Der fehlerfreie, kontinuierliche Transport von Kisten.
+
+![Beispielbild Normalbetrieb](../data/free/image_01.jpeg)
 
 ## Daten
 
