@@ -28,5 +28,8 @@ Ihr könnt dieses Modell entweder als Klassifikationsmodell ausarbeiten, oder au
 * [ ] Führt die Feature-Extraction durch (25%)
 * [ ]  Setze eine geeignete Umgebung auf um reproduzierbare ML Ergebnisse zu bekommen (10%)
 * [ ]  Entwirf eine geeignete Netzarchitektur (15%) und probiere eine zweite, alternative Architektur aus (15%)
+
+> **Idee:** Ihr müsst euer Zeites Netz nicht als CNN ausführen. Wenn ihr wollt, könnt ihr eure Input-Daten durchaus auch als nummerische Vektoren operationalisieren. Das nur als Idee 😉.
+
 * [ ] Wähle geeignete Trainingseinstellungen aus und trainiere das Netz (15%)
 * [ ]  Analysiere die Schätzgenauigkeit des Netzes (20%)
