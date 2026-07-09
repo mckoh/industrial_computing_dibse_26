@@ -16,7 +16,7 @@ app = FastAPI(
 )
 
 try:
-    model = load_model("model_struct.keras")
+    model = load_model("model_fnn.keras")
     print("Modell erfolgreich geladen!")
 except Exception as e:
     print(f"Fehler beim Laden des Modells: {e}")
