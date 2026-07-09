@@ -7,5 +7,5 @@ ipython
 torch
 torchvision
 pandas
-fastapi
+fastapi[standard]
 pillow
