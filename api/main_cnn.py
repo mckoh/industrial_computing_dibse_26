@@ -60,3 +60,7 @@ async def predict_image(file: UploadFile = File(...)):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Fehler bei der Verarbeitung: {str(e)}")
+
+@app.get("/")
+async def root():
+    return {"status": "online", "model_loaded": model is not None}

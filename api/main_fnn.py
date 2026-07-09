@@ -5,7 +5,6 @@ from typing import List
 from tensorflow.keras.models import load_model
 
 
-# Das erwartet ein JSON wie: {"features": [1, 1, 0]}
 class InferenceRequest(BaseModel):
     features: List[int]
 
