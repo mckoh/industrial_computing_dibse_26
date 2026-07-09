@@ -1,3 +1,5 @@
 .venv
 .DS_Store
 sandbox.ipynb
+*.keras
+__pycache__
